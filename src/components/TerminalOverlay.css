@@ -1,0 +1,51 @@
+.terminal-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 15px;
+    background: rgba(5, 5, 16, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--color-primary);
+    pointer-events: none;
+    /* Let clicks pass through */
+    z-index: 20;
+}
+
+.terminal-line {
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.prompt {
+    color: var(--color-secondary);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-color: var(--color-primary);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
