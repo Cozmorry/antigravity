@@ -5,7 +5,6 @@
 **Neural Symphony** is an interactive, sci-fi inspired web visualization that simulates a neural network. It combines high-performance HTML5 Canvas rendering with a modern, glassmorphic React interface to create a premium digital experience.
 
 ![Neural Symphony Preview](public/preview.png)
-*(Note: You can add a screenshot here later)*
 
 ## Key Features
 
